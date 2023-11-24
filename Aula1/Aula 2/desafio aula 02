@@ -1,0 +1,27 @@
+const etanol = 2.50;
+const gasolina =5.79;
+let gasto_médio = 10;
+let distância = 20;
+
+let tipo_de_combustível = gasolina
+
+
+switch (tipo_de_combustível) {
+    case gasolina:
+        total_gasolina = (gasto_médio / gasolina) * distância
+        litros_consumidos = distância / gasto_médio
+                
+        console.log('A previsão do custo com combustível será de R$ ' + total_gasolina.toFixed(2) + '. No qual, serão provavelmente utilizados ' + litros_consumidos.toFixed(1) + ' litros de gasolina.' )
+        break
+
+    case etanol:
+        total_etanol = (gasto_médio / etanol) * distância
+        litros_consumidos = distância / gasto_médio
+              
+        console.log('A previsão do custo com combustível será de R$ ' + total_etanol.toFixed(2) + '. No qual, serão provavelmente utilizados ' + litros_consumidos.toFixed(1) + 'litros de etanol.')
+        break
+    
+    default:
+        console.log('Erro: Verifique os dados inseridos e tente novamente!')
+        break
+}
