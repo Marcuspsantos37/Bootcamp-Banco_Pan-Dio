@@ -1,0 +1,27 @@
+// Class é a descrição/definição de como um objeto deve ser 
+// Instância é a descrição de uma ocorrência dentro de uma classe
+// O CONSTRUCTOR é utilizado quando querermos que uma informação seja obrigatória
+
+class pessoa {
+    nome;
+    idade;
+    AnoDeNascimento;
+    constructor (nome, idade) {
+        this.nome = nome;
+        this.idade = idade;
+        this.AnoDeNascimento = 2023-idade;
+        
+    }
+    descrever () {
+        console.log(`Meu nome é ${this.nome} e tenho ${this.idade} anos`);
+    }
+}
+
+
+const paulo = new pessoa();
+paulo.nome = 'Paulo Franco';
+paulo.idade = 18;
+
+const marcus = new pessoa('Marcus Paulo',39);
+
+console.log(marcus)
