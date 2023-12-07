@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=M+PLUS+Rounded+1c:wght@700&display=swap')
+
+
+* {
+    margin: none;
+    padding: none;     
+}
+
+nav {
+    display: flex;
+    background-color: rgb(1, 8, 14);
+    justify-content: center;
+    box-shadow: 5px 10px rgba(0, 0, 0, 0.293);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+
+nav ul{
+    display: inle;
+    list-style: none; 
+    padding-bottom:.4rem;
+    font-family: M PLUS Rounded 1c;
+}
+
+nav ul li{
+    display: inline;
+    justify-content: space-between;
+    margin-right: 5rem;
+    font-size: 18pt;
+    color: aliceblue;
+    font-style:oblique;
+}
+
+li:hover {
+    display: inline;
+    background-color: #fff;
+    color: black;
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1);
+    border-radius: 16%
+    
+}
+
+.Logo {
+    justify-content: space-around;
+    width: 7rem;
+    
+}
+
+@media screen and (max-width: 930px){
+    .nav {
+        display: flex;
+        padding: none;
+        margin: none;
+    }
+    .itens div ul{
+        align-items: center;
+    }
+    
+    .itens div ul li{
+        display: inline;
+        justify-content: center;
+        margin-right: 5px;
+        font-size: 10pt;
+        color: aliceblue;
+        font-style:oblique;
+        color: #fff;
+           
+    }
+
+    .itens div ul li:hover{
+        color: black;
+    }
+
+    img{
+        max-width: 4rem;
+    }
+}
